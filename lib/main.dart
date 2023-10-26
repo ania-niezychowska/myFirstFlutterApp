@@ -4,9 +4,20 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Center(
-        child: Text('Hello there'),
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey,
+        appBar: AppBar(
+          title: Text("my first app"),
+          backgroundColor: Colors.blueGrey[900],
+        ),
+        body: Center(
+          child: Image(
+            image: AssetImage('images/girl-8257551_1280.jpg'),
+          ),
+        ),
       ),
     ),
   );
 }
+
+//takeaways: ALT + enter
